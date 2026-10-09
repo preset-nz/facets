@@ -6,7 +6,7 @@ version = 1
 [[inputs]]
 path = "pnpm-lock.yaml"
 ecosystem = "pnpm"
-sha256 = "190f10a27ae94dc8d39ee0ffb0cc816d4ec877788174698824071c805c3641ce"
+sha256 = "261b24a87a261073071097a72147e3b25fc13f286fbe74787357e30e7359904f"
 
 [[packages]]
 ecosystem = "pnpm"
@@ -187,22 +187,6 @@ scope = "dev"
 [[packages]]
 ecosystem = "pnpm"
 name = "@babel/plugin-transform-modules-commonjs"
-version = "7.29.7"
-source = "registry"
-declared = "MIT"
-scope = "dev"
-
-[[packages]]
-ecosystem = "pnpm"
-name = "@babel/plugin-transform-react-jsx-self"
-version = "7.29.7"
-source = "registry"
-declared = "MIT"
-scope = "dev"
-
-[[packages]]
-ecosystem = "pnpm"
-name = "@babel/plugin-transform-react-jsx-source"
 version = "7.29.7"
 source = "registry"
 declared = "MIT"
@@ -827,7 +811,7 @@ scope = "shipped"
 [[packages]]
 ecosystem = "pnpm"
 name = "@rolldown/pluginutils"
-version = "1.0.0-rc.3"
+version = "1.0.1"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1178,38 +1162,6 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
-name = "@types/babel__core"
-version = "7.20.5"
-source = "registry"
-declared = "MIT"
-scope = "dev"
-
-[[packages]]
-ecosystem = "pnpm"
-name = "@types/babel__generator"
-version = "7.27.0"
-source = "registry"
-declared = "MIT"
-scope = "dev"
-
-[[packages]]
-ecosystem = "pnpm"
-name = "@types/babel__template"
-version = "7.4.4"
-source = "registry"
-declared = "MIT"
-scope = "dev"
-
-[[packages]]
-ecosystem = "pnpm"
-name = "@types/babel__traverse"
-version = "7.28.0"
-source = "registry"
-declared = "MIT"
-scope = "dev"
-
-[[packages]]
-ecosystem = "pnpm"
 name = "@types/estree"
 version = "1.0.9"
 source = "registry"
@@ -1267,7 +1219,7 @@ scope = "shipped"
 [[packages]]
 ecosystem = "pnpm"
 name = "@vitejs/plugin-react"
-version = "5.2.0"
+version = "6.1.1"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -3111,14 +3063,6 @@ version = "19.3.0"
 source = "registry"
 declared = "MIT"
 scope = "shipped"
-
-[[packages]]
-ecosystem = "pnpm"
-name = "react-refresh"
-version = "0.18.0"
-source = "registry"
-declared = "MIT"
-scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
