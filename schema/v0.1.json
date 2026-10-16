@@ -809,6 +809,20 @@
         },
         "required": ["pages"]
       },
+      "then": {
+        "properties": {
+          "groups": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "page": true
+              },
+              "required": ["page"]
+            }
+          }
+        }
+      },
       "else": {
         "properties": {
           "groups": {
@@ -825,7 +839,7 @@
           }
         }
       },
-      "$comment": "Without pages, no group names one. With pages, a group without one is on the first page; whether a named page exists is checked in code: schemaProblems()."
+      "$comment": "With pages every group names one; without, none does. Which page, and whether it exists, is checked in code: schemaProblems()."
     }
   ]
 }

@@ -215,18 +215,12 @@ valid.push(
     ]),
   ],
   [
-    "a group without page goes on the first page",
-    paged([
-      { id: "a", rows: [] },
-      { id: "c", page: "export", rows: [] },
-    ]),
-  ],
-  [
     "an advanced group without pages",
     { version: 1, groups: [{ id: "a", advanced: true, rows: [] }] },
   ],
 )
 const invalid: Array<[string, unknown]> = [
+  ["a group without page when there are pages", paged([{ id: "a", rows: [] }])],
   [
     "a group with page when there are none",
     { version: 1, groups: [{ id: "a", page: "x", rows: [] }] },

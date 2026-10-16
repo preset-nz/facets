@@ -2,7 +2,6 @@ import { createContext, useContext, useId, useMemo, useState } from "react"
 import { Separator } from "@/components/ui/separator"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { LABEL_WIDTH_VAR, LabelLayoutContext, labelColumnWidth, useLabelLayout } from "./layout"
-import { pageOf } from "./pages"
 import { getFieldRenderer, getScope } from "./registry"
 import type {
   FieldDef,
@@ -71,9 +70,7 @@ interface Page {
 function pagesOf(schema: PropertySchema): Page[] {
   const declared = schema.pages?.length ? schema.pages : [{ id: "", label: "" }]
   return declared.map(({ id, label }) => {
-    const on = schema.pages?.length
-      ? schema.groups.filter((g) => pageOf(schema, g) === id)
-      : schema.groups
+    const on = schema.pages?.length ? schema.groups.filter((g) => g.page === id) : schema.groups
     return {
       id,
       label,

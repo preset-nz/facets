@@ -86,7 +86,7 @@ From 0.3.0 (check the installed version; it also needs the host's `@/components/
 ```
 
 - **No `pages`: one page, no tab row**, as before. Don't add pages to a short panel; one declared page draws no tabs.
-- **With pages, a group without `page` sits on the first page**, the default page; a `page` it names must be declared. Without pages, no group has `page`. Paths never name a page.
+- **With pages, every group names a declared `page`.** Without, no group has `page`. Paths never name a page.
 - **`advanced: true`** puts a group behind the page's one closed *Advanced* row, at its foot. Works with or without pages. Mark the groups most people never touch, not everything past the first.
 - **Every page needs a group that isn't advanced**, page ids are unique, and `pages` isn't empty. JSON Schema can't check all of this: run `schemaProblems(schema)` (exported), which `registerScope` also runs. It **throws** on any problem.
 - **Card and collapsed views ignore pages.**
