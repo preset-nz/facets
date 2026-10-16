@@ -259,7 +259,7 @@ export const GROUP_DOC: Doc = {
     ["description", "a line under the title"],
     ["collapsible", "fold under the title"],
     ["defaultCollapsed", "start folded"],
-    ["page", "the page it sits on; required when the root declares pages"],
+    ["page", "the page it sits on; omit for the first page"],
     ["advanced", "behind the page's closed Advanced row"],
     ["rows", "fields, or [field, field] for a row of two"],
   ],

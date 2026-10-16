@@ -303,8 +303,10 @@ const SETTINGS: PropertySchema = {
   group to another page changes no values.
 - **`advanced: true`** puts a group behind one closed *Advanced* row at the foot
   of its page, with or without pages. The row folds like a collapsible group.
-- **Every page needs a group that isn't advanced.** With pages, every group
-  names a declared page; without, none does. `schemaProblems(schema)` lists
+- **The first page is the default page.** A group without `page` sits on it,
+  so a schema can gain pages without touching every group.
+- **Every page needs a group that isn't advanced.** A `page` a group
+  names must be declared; without `pages`, no group names one. `schemaProblems(schema)` lists
   what breaks these rules, and `registerScope` throws on any of them, so a bad
   schema fails where it is registered, not as an empty tab.
 - **The card and collapsed views ignore pages and `advanced`.** They draw

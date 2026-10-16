@@ -189,7 +189,7 @@ export interface PropertyGroupDef {
   description?: string
   collapsible?: boolean
   defaultCollapsed?: boolean
-  /** The id of the page the group sits on. Required when the schema declares `pages`, absent otherwise. */
+  /** The id of the page the group sits on. Omit it for the first page; never set it without `pages`. */
   page?: string
   /** Sits behind the page's one closed Advanced row, at the foot of the page. */
   advanced?: boolean

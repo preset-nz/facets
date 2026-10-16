@@ -27,6 +27,7 @@ import {
   type PromoteView,
   PropertyPanel,
   type PropertySchema,
+  pageOf,
   promotedFields,
   registerScope,
 } from "../../src"
@@ -162,7 +163,7 @@ export function App() {
   // the open page, and not behind its Advanced row if it can help it.
   const fallbackGroup = (schema: PropertySchema) => {
     const pageId = openPage(schema)
-    const shown = schema.groups.filter((g) => pageId === undefined || g.page === pageId)
+    const shown = schema.groups.filter((g) => pageId === undefined || pageOf(schema, g) === pageId)
     const pick =
       [...shown].reverse().find((g) => !g.advanced) ?? shown.at(-1) ?? schema.groups.at(-1)
     return pick ? schema.groups.indexOf(pick) : schema.groups.length - 1
@@ -175,7 +176,7 @@ export function App() {
     const made = makeUnique(entry, schema)
     if (schema.groups.length === 0) schema.groups.push({ id: "group", title: "Group", rows: [] })
     const group = schema.groups[at?.group ?? fallbackGroup(schema)]
-    if (group.page) setPage(group.page)
+    if (schema.pages?.length) setPage(pageOf(schema, group))
     group.rows.splice(
       at?.group != null && at.insertAt != null ? at.insertAt : group.rows.length,
       0,
@@ -197,8 +198,9 @@ export function App() {
     ])
     let n = schema.groups.length + 1
     while (ids.has(`group${n}`)) n++
-    // On a paged schema the group needs a page: the caret's group's, else the open one.
-    const pageId = schema.pages && (schema.groups[at?.group ?? -1]?.page ?? openPage(schema))
+    // On a paged schema the group goes on the caret's group's page, else the open one.
+    const caretGroup = schema.groups[at?.group ?? -1]
+    const pageId = schema.pages && (caretGroup ? pageOf(schema, caretGroup) : openPage(schema))
     const group = {
       id: `group${n}`,
       title: `Group ${n}`,

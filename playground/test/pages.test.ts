@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest"
 import {
   type PropertyGroupDef,
   type PropertySchema,
+  pageOf,
   registerScope,
   schemaProblems,
   unregisterScope,
@@ -56,11 +57,16 @@ describe("schemaProblems", () => {
     ])
   })
 
-  it("rejects a group without a page, or with an undeclared one", () => {
-    const bad = paged([group("a"), group("b", { page: "general" }), group("c", { page: "nope" })])
+  it("puts a group without a page on the first page", () => {
+    const schema = paged([group("a"), group("b", { page: "export" })])
+    expect(schemaProblems(schema)).toEqual([])
+    expect(schema.groups.map((g) => pageOf(schema, g))).toEqual(["general", "export"])
+  })
+
+  it("rejects an undeclared page", () => {
+    const bad = paged([group("a"), group("c", { page: "nope" })])
     expect(schemaProblems(bad)).toEqual([
-      'groups[0] ("a"): names no page',
-      'groups[2] ("c"): page "nope" is not declared',
+      'groups[1] ("c"): page "nope" is not declared',
       'page "export" has no groups',
     ])
   })
