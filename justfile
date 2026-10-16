@@ -19,7 +19,14 @@ check:
     ./node_modules/.bin/tsc --noEmit
     ./node_modules/.bin/biome check .
     node scripts/check-schema.ts
+    just test
     just licences
+
+# The package's tests (vitest, jsdom). They run from the playground, where React is
+# installed: the package deliberately has none (pnpm-workspace.yaml).
+[group('quality')]
+test *args:
+    cd playground && ./node_modules/.bin/vitest run {{args}}
 
 # Writes the formatter's fixes (Biome).
 [group('quality')]

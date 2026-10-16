@@ -6,7 +6,39 @@ version = 1
 [[inputs]]
 path = "pnpm-lock.yaml"
 ecosystem = "pnpm"
-sha256 = "29881a1a0ae8ed81ab7a23239598433823e191bb4dc3b9e35fd2ed4fa8a79718"
+sha256 = "0f8ea547645b42ae8d50ee042aa93295450dfc8c65bcfa84c0c64c87b7d0bb40"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@acemir/cssom"
+version = "0.9.32"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@asamuzakjp/css-color"
+version = "4.1.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@asamuzakjp/dom-selector"
+version = "6.8.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@asamuzakjp/nwsapi"
+version = "2.3.9"
+source = "registry"
+declared = "MIT"
+scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
@@ -418,6 +450,54 @@ scope = "shipped"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "@csstools/color-helpers"
+version = "6.1.2"
+source = "registry"
+declared = "MIT-0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@csstools/css-calc"
+version = "3.4.3"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@csstools/css-color-parser"
+version = "4.2.6"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@csstools/css-parser-algorithms"
+version = "4.0.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@csstools/css-syntax-patches-for-csstree"
+version = "1.1.15"
+source = "registry"
+declared = "MIT-0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@csstools/css-tokenizer"
+version = "4.0.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "@dotenvx/dotenvx"
 version = "1.75.1"
 source = "registry"
@@ -636,6 +716,14 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "@esbuild/win32-x64"
 version = "0.28.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@exodus/bytes"
+version = "1.16.0"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1050,6 +1138,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "@standard-schema/spec"
+version = "1.1.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "@tailwindcss/node"
 version = "4.3.3"
 source = "registry"
@@ -1170,8 +1266,32 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "@testing-library/dom"
+version = "10.4.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@testing-library/react"
+version = "16.3.3"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "@ts-morph/common"
 version = "0.27.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@types/aria-query"
+version = "5.0.4"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1204,6 +1324,22 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "@types/babel__traverse"
 version = "7.28.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@types/chai"
+version = "5.2.3"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@types/deep-eql"
+version = "4.0.2"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1434,8 +1570,72 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "@vitest/expect"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@vitest/mocker"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@vitest/pretty-format"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@vitest/runner"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@vitest/snapshot"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@vitest/spy"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "@vitest/utils"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "accepts"
 version = "2.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "agent-base"
+version = "7.1.4"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1490,10 +1690,34 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "ansi-styles"
+version = "5.2.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "argparse"
 version = "2.0.1"
 source = "registry"
 declared = "Python-2.0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "aria-query"
+version = "5.3.0"
+source = "registry"
+declared = "Apache-2.0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "assertion-error"
+version = "2.0.1"
+source = "registry"
+declared = "MIT"
 scope = "dev"
 
 [[packages]]
@@ -1526,6 +1750,14 @@ name = "baseline-browser-mapping"
 version = "2.11.26"
 source = "registry"
 declared = "Apache-2.0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "bidi-js"
+version = "1.1.0"
+source = "registry"
+declared = "MIT"
 scope = "dev"
 
 [[packages]]
@@ -1606,6 +1838,14 @@ name = "caniuse-lite"
 version = "1.0.30001812"
 source = "registry"
 declared = "CC-BY-4.0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "chai"
+version = "6.3.0"
+source = "registry"
+declared = "MIT"
 scope = "dev"
 
 [[packages]]
@@ -1770,8 +2010,24 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "css-tree"
+version = "3.2.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "cssesc"
 version = "3.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "cssstyle"
+version = "5.3.7"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1786,6 +2042,14 @@ scope = "shipped"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "data-urls"
+version = "6.0.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "debounce-fn"
 version = "4.0.0"
 source = "registry"
@@ -1796,6 +2060,14 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "debug"
 version = "4.4.3"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "decimal.js"
+version = "10.6.0"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -1858,6 +2130,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "dequal"
+version = "2.0.3"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "detect-libc"
 version = "2.1.2"
 source = "registry"
@@ -1870,6 +2150,14 @@ name = "diff"
 version = "8.0.4"
 source = "registry"
 declared = "BSD-3-Clause"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "dom-accessibility-api"
+version = "0.5.16"
+source = "registry"
+declared = "MIT"
 scope = "dev"
 
 [[packages]]
@@ -1946,6 +2234,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "entities"
+version = "8.1.0"
+source = "registry"
+declared = "BSD-2-Clause"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "env-paths"
 version = "2.2.1"
 source = "registry"
@@ -1972,6 +2268,14 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "es-errors"
 version = "1.3.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "es-module-lexer"
+version = "2.3.2"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -2018,6 +2322,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "estree-walker"
+version = "3.0.3"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "etag"
 version = "1.8.1"
 source = "registry"
@@ -2054,6 +2366,14 @@ name = "execa"
 version = "9.6.1"
 source = "registry"
 declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "expect-type"
+version = "1.4.0"
+source = "registry"
+declared = "Apache-2.0"
 scope = "dev"
 
 [[packages]]
@@ -2298,8 +2618,32 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "html-encoding-sniffer"
+version = "6.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "http-errors"
 version = "2.0.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "http-proxy-agent"
+version = "7.0.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "https-proxy-agent"
+version = "7.0.6"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -2466,6 +2810,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "is-potential-custom-element-name"
+version = "1.0.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "is-promise"
 version = "4.0.0"
 source = "registry"
@@ -2572,6 +2924,14 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "js-yaml"
 version = "4.3.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "jsdom"
+version = "27.4.0"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -2779,9 +3139,25 @@ scope = "dev"
 [[packages]]
 ecosystem = "pnpm"
 name = "lru-cache"
+version = "11.5.3"
+source = "registry"
+declared = "BlueOak-1.0.0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "lru-cache"
 version = "5.1.1"
 source = "registry"
 declared = "ISC"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "lz-string"
+version = "1.5.0"
+source = "registry"
+declared = "MIT"
 scope = "dev"
 
 [[packages]]
@@ -2798,6 +3174,14 @@ name = "math-intrinsics"
 version = "1.1.0"
 source = "registry"
 declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "mdn-data"
+version = "2.27.1"
+source = "registry"
+declared = "CC0-1.0"
 scope = "dev"
 
 [[packages]]
@@ -2970,6 +3354,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "obug"
+version = "2.2.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "on-finished"
 version = "2.4.1"
 source = "registry"
@@ -3074,6 +3466,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "parse5"
+version = "8.0.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "parseurl"
 version = "1.3.3"
 source = "registry"
@@ -3116,6 +3516,14 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "path-to-regexp"
 version = "8.4.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "pathe"
+version = "2.0.3"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -3194,6 +3602,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "pretty-format"
+version = "27.5.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "pretty-ms"
 version = "9.3.1"
 source = "registry"
@@ -3212,6 +3628,14 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "proxy-addr"
 version = "2.0.8"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "punycode"
+version = "2.3.1"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -3271,6 +3695,14 @@ version = "19.3.0"
 source = "registry"
 declared = "MIT"
 scope = "shipped"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "react-is"
+version = "17.0.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
@@ -3366,6 +3798,14 @@ name = "safer-buffer"
 version = "2.1.2"
 source = "registry"
 declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "saxes"
+version = "6.0.0"
+source = "registry"
+declared = "ISC"
 scope = "dev"
 
 [[packages]]
@@ -3474,6 +3914,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "siginfo"
+version = "2.0.0"
+source = "registry"
+declared = "ISC"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "signal-exit"
 version = "3.0.7"
 source = "registry"
@@ -3530,8 +3978,24 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "stackback"
+version = "0.0.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "statuses"
 version = "2.0.2"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "std-env"
+version = "4.3.0"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -3610,6 +4074,14 @@ scope = "shipped"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "symbol-tree"
+version = "3.2.4"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "systeminformation"
 version = "5.33.13"
 source = "registry"
@@ -3650,8 +4122,48 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "tinybench"
+version = "2.9.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "tinyexec"
+version = "1.3.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "tinyglobby"
 version = "0.2.17"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "tinyrainbow"
+version = "3.2.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "tldts"
+version = "7.4.18"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "tldts-core"
+version = "7.4.18"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -3668,6 +4180,22 @@ scope = "dev"
 ecosystem = "pnpm"
 name = "toidentifier"
 version = "1.0.1"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "tough-cookie"
+version = "6.0.2"
+source = "registry"
+declared = "BSD-3-Clause"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "tr46"
+version = "6.0.0"
 source = "registry"
 declared = "MIT"
 scope = "dev"
@@ -3818,11 +4346,59 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "vitest"
+version = "4.1.11"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "w3c-keyname"
 version = "2.2.8"
 source = "registry"
 declared = "MIT"
 scope = "shipped"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "w3c-xmlserializer"
+version = "5.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "webidl-conversions"
+version = "8.0.1"
+source = "registry"
+declared = "BSD-2-Clause"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "whatwg-mimetype"
+version = "4.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "whatwg-mimetype"
+version = "5.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "whatwg-url"
+version = "15.1.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
@@ -3842,6 +4418,14 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "why-is-node-running"
+version = "2.3.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "wrappy"
 version = "1.0.2"
 source = "registry"
@@ -3850,8 +4434,32 @@ scope = "dev"
 
 [[packages]]
 ecosystem = "pnpm"
+name = "ws"
+version = "8.22.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
 name = "wsl-utils"
 version = "1.0.0"
+source = "registry"
+declared = "MIT"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "xml-name-validator"
+version = "5.0.0"
+source = "registry"
+declared = "Apache-2.0"
+scope = "dev"
+
+[[packages]]
+ecosystem = "pnpm"
+name = "xmlchars"
+version = "2.2.0"
 source = "registry"
 declared = "MIT"
 scope = "dev"
